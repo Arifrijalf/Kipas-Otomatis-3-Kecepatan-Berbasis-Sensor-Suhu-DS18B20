@@ -9,7 +9,11 @@ constexpr uint8_t PWM_RESOLUTION = 8;
 constexpr uint32_t PWM_FREQUENCY = 25000;
 constexpr float FAN_ON_TEMPERATURE = 25.5f;
 constexpr float FAN_OFF_TEMPERATURE = 24.5f;
-constexpr float FULL_SPEED_TEMPERATURE = 40.0f;
+constexpr float SPEED2_TEMPERATURE = 30.0f;
+constexpr float SPEED3_TEMPERATURE = 35.0f;
+constexpr uint8_t SPEED1_PWM = 85;
+constexpr uint8_t SPEED2_PWM = 170;
+constexpr uint8_t SPEED3_PWM = 255;
 constexpr unsigned long SENSOR_INTERVAL_MS = 1000;
 
 OneWire oneWire(ONE_WIRE_PIN);
@@ -23,12 +27,28 @@ uint8_t calculatePwm(float temperature) {
         return 0;
     }
 
-    if (temperature >= FULL_SPEED_TEMPERATURE) {
-        return 255;
+    if (temperature >= SPEED3_TEMPERATURE) {
+        return SPEED3_PWM;
     }
 
-    const float proportion = (temperature - 25.0f) / (FULL_SPEED_TEMPERATURE - 25.0f);
-    return static_cast<uint8_t>(constrain(proportion * 255.0f, 0.0f, 255.0f));
+    if (temperature >= SPEED2_TEMPERATURE) {
+        return SPEED2_PWM;
+    }
+
+    return SPEED1_PWM;
+}
+
+uint8_t currentSpeedLevel(uint8_t pwmValue) {
+    if (pwmValue >= SPEED3_PWM) {
+        return 3;
+    }
+    if (pwmValue >= SPEED2_PWM) {
+        return 2;
+    }
+    if (pwmValue > 0) {
+        return 1;
+    }
+    return 0;
 }
 
 void updateFanState(float temperature) {
@@ -71,6 +91,7 @@ void loop() {
     ledcWrite(PWM_CHANNEL, pwmValue);
 
     const uint8_t speedPercentage = static_cast<uint8_t>((pwmValue * 100UL) / 255UL);
+    const uint8_t speedLevel = currentSpeedLevel(pwmValue);
     Serial.print("Temperature: ");
     Serial.print(temperature, 1);
     Serial.print(" C | PWM: ");
@@ -78,5 +99,10 @@ void loop() {
     Serial.print(" | Speed: ");
     Serial.print(speedPercentage);
     Serial.print("% | Fan: ");
-    Serial.println(pwmValue > 0 ? "ACTIVE" : "OFF");
+    if (speedLevel == 0) {
+        Serial.println("OFF");
+    } else {
+        Serial.print("SPEED ");
+        Serial.println(speedLevel);
+    }
 }
