@@ -140,10 +140,26 @@ Kalau mau ganti batas suhunya tinggal ubah angka di atas. Hysteresis on/off-nya 
 
 ## Progress 1 minggu
 
-Catatan harian saya selama ngerjain proyek ini. Tiap hari diisi tujuan, yang dikerjain, hasilnya, kendalanya, sama dokumentasinya. Ganti `[...]` dengan catatan masing-masing hari. Foto dan log disimpan di folder `docs/`.
+Catatan harian saya selama ngerjain proyek ini. Ringkasannya di tabel bawah, detail tiap hari tinggal diklik. Ganti `[...]` dengan catatan masing-masing hari. Foto dan log disimpan di folder `docs/`.
+
+### Ringkasan
+
+| Hari | Fokus | Status | Folder |
+| ---- | ----- | ------ | ------ |
+| 1 | [...] | ☐ | [docs/hari-01](docs/hari-01/) |
+| 2 | [...] | ☐ | [docs/hari-02](docs/hari-02/) |
+| 3 | [...] | ☐ | [docs/hari-03](docs/hari-03/) |
+| 4 | [...] | ☐ | [docs/hari-04](docs/hari-04/) |
+| 5 | [...] | ☐ | [docs/hari-05](docs/hari-05/) |
+| 6 | [...] | ☐ | [docs/hari-06](docs/hari-06/) |
+| 7 | [...] | ☐ | [docs/hari-07](docs/hari-07/) |
+
+Keterangan status: ☐ belum mulai, ▶ berjalan, ✔ selesai.
 
 <details>
-<summary>Hari 1 [...] (Tanggal: YYYY-MM-DD)</summary>
+<summary>Hari 1 [...] (Tanggal: YYYY-MM-DD) - <a href="docs/hari-01/">buka folder</a></summary>
+
+![Foto progres hari 1](docs/hari-01/foto-utama.jpg)
 
 Tujuan: [...]
 
@@ -156,14 +172,16 @@ Hasil: [...]
 
 Kendala: [...]
 
-Dokumentasi: `docs/hari-01/` (foto: ..., video: ..., log: ...)
+File pendukung: [docs/hari-01/](docs/hari-01/) (tambah foto, video, log serial di sini)
 
 Status: Belum mulai / Berjalan / Selesai
 
 </details>
 
 <details>
-<summary>Hari 2 [...] (Tanggal: YYYY-MM-DD)</summary>
+<summary>Hari 2 [...] (Tanggal: YYYY-MM-DD) - <a href="docs/hari-02/">buka folder</a></summary>
+
+![Foto progres hari 2](docs/hari-02/foto-utama.jpg)
 
 Tujuan: [...]
 
@@ -176,14 +194,16 @@ Hasil: [...]
 
 Kendala: [...]
 
-Dokumentasi: `docs/hari-02/`
+File pendukung: [docs/hari-02/](docs/hari-02/)
 
 Status: Belum mulai / Berjalan / Selesai
 
 </details>
 
 <details>
-<summary>Hari 3 [...] (Tanggal: YYYY-MM-DD)</summary>
+<summary>Hari 3 [...] (Tanggal: YYYY-MM-DD) - <a href="docs/hari-03/">buka folder</a></summary>
+
+![Foto progres hari 3](docs/hari-03/foto-utama.jpg)
 
 Tujuan: [...]
 
@@ -196,14 +216,16 @@ Hasil: [...]
 
 Kendala: [...]
 
-Dokumentasi: `docs/hari-03/`
+File pendukung: [docs/hari-03/](docs/hari-03/)
 
 Status: Belum mulai / Berjalan / Selesai
 
 </details>
 
 <details>
-<summary>Hari 4 [...] (Tanggal: YYYY-MM-DD)</summary>
+<summary>Hari 4 [...] (Tanggal: YYYY-MM-DD) - <a href="docs/hari-04/">buka folder</a></summary>
+
+![Foto progres hari 4](docs/hari-04/foto-utama.jpg)
 
 Tujuan: [...]
 
@@ -216,14 +238,16 @@ Hasil: [...]
 
 Kendala: [...]
 
-Dokumentasi: `docs/hari-04/`
+File pendukung: [docs/hari-04/](docs/hari-04/)
 
 Status: Belum mulai / Berjalan / Selesai
 
 </details>
 
 <details>
-<summary>Hari 5 [...] (Tanggal: YYYY-MM-DD)</summary>
+<summary>Hari 5 [...] (Tanggal: YYYY-MM-DD) - <a href="docs/hari-05/">buka folder</a></summary>
+
+![Foto progres hari 5](docs/hari-05/foto-utama.jpg)
 
 Tujuan: [...]
 
@@ -236,14 +260,16 @@ Hasil: [...]
 
 Kendala: [...]
 
-Dokumentasi: `docs/hari-05/`
+File pendukung: [docs/hari-05/](docs/hari-05/)
 
 Status: Belum mulai / Berjalan / Selesai
 
 </details>
 
 <details>
-<summary>Hari 6 [...] (Tanggal: YYYY-MM-DD)</summary>
+<summary>Hari 6 [...] (Tanggal: YYYY-MM-DD) - <a href="docs/hari-06/">buka folder</a></summary>
+
+![Foto progres hari 6](docs/hari-06/foto-utama.jpg)
 
 Tujuan: [...]
 
@@ -256,14 +282,16 @@ Hasil: [...]
 
 Kendala: [...]
 
-Dokumentasi: `docs/hari-06/`
+File pendukung: [docs/hari-06/](docs/hari-06/)
 
 Status: Belum mulai / Berjalan / Selesai
 
 </details>
 
 <details>
-<summary>Hari 7 [...] (Tanggal: YYYY-MM-DD)</summary>
+<summary>Hari 7 [...] (Tanggal: YYYY-MM-DD) - <a href="docs/hari-07/">buka folder</a></summary>
+
+![Foto progres hari 7](docs/hari-07/foto-utama.jpg)
 
 Tujuan: [...]
 
@@ -276,7 +304,7 @@ Hasil: [...]
 
 Kendala: [...]
 
-Dokumentasi: `docs/hari-07/`
+File pendukung: [docs/hari-07/](docs/hari-07/)
 
 Status: Belum mulai / Berjalan / Selesai
 
