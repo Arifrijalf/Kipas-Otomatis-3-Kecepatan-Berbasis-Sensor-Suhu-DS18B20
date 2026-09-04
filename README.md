@@ -320,22 +320,12 @@ Yang belum / lanjutannya: [...]
 
 ## Dokumentasi
 
-Foto, video, dan log serial disimpan di folder `docs/` biar README tidak penuh:
+Aturan mainnya simpel: tiap folder hari wajib ada satu foto bernama `foto-utama.jpg`, foto itu yang otomatis tampil di dropdown progres di atas. File lain bebas, misal `docs/hari-01/log-serial.txt` atau `docs/final/demo.mp4`.
 
 ```text
 docs/
-├── hari-01/
-├── hari-02/
-├── hari-03/
-├── hari-04/
-├── hari-05/
-├── hari-06/
-├── hari-07/
-└── final/
-```
-
-Penamaan filenya misal `docs/hari-01/foto-rangkaian.jpg`, `docs/hari-01/log-serial.txt`, `docs/final/demo.mp4`. Kalau mau nampilin gambar di README tinggal pakai:
-
-```markdown
-![Foto rangkaian hari pertama](docs/hari-01/foto-rangkaian.jpg)
+├── hari-01/   → foto-utama.jpg + file lain hari 1
+├── hari-02/   → foto-utama.jpg + file lain hari 2
+├── ...
+└── final/     → foto dan video hasil akhir
 ```
